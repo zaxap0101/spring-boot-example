@@ -4,8 +4,9 @@ import com.azazel.customerrepository.CustomerRepo;
 import com.azazel.greetresponse.GreetResponse;
 import com.azazel.greetresponse.servicegreetresponse.ServiceGreetResponse;
 import com.azazel.model.Customer;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -19,7 +20,6 @@ public class ControllerGreetResponse {
         this.customerRepo = customerRepo;
         this.serviceGreetResponse = serviceGreetResponse;
     }
-
 
     @GetMapping("/greet")
     public GreetResponse greet() {
