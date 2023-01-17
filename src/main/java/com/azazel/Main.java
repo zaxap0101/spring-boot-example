@@ -3,6 +3,8 @@ package com.azazel;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Arrays;
+
 @SpringBootApplication
 public class Main {
 
@@ -12,6 +14,7 @@ public class Main {
             System.out.println(Arrays.toString(s.exclude()));
             System.out.println(Arrays.toString(new String[1]));
         }*/
+
         SpringApplication.run(Main.class, args);
     }
 }
